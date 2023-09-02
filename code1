@@ -16,3 +16,13 @@ public static void main(String[] args) throws InterruptedException {
 		driver.findElement(By.id("logoutLink")).click();
 		
 	}
+	new program
+	public static void main(String[] args) throws InterruptedException {
+		ChromeDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.get("https://demo.actitime.com/login.do");
+		WebElement a = driver.findElement(By.id("username"));
+		a.sendKeys("admin");
+		driver.navigate().refresh();
+		a.sendKeys("user");
+	}	
